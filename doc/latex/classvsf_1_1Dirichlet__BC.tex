@@ -1,0 +1,59 @@
+\hypertarget{classvsf_1_1Dirichlet__BC}{\section{vsf\-:\-:Dirichlet\-\_\-\-B\-C$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1Dirichlet__BC}\index{vsf\-::\-Dirichlet\-\_\-\-B\-C$<$ dim $>$@{vsf\-::\-Dirichlet\-\_\-\-B\-C$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Dirichlet\-\_\-\-B\-C$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvsf_1_1Dirichlet__BC}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvsf_1_1Dirichlet__BC_a3fc7bb6aef647db39b9f1d4664b3740b}{Dirichlet\-\_\-\-B\-C} ()
+\item 
+virtual double \hyperlink{classvsf_1_1Dirichlet__BC_a9996ee81e6748568e3b069c12afdd674}{value} (const Point$<$ dim $>$ \&p, const unsigned int component=0) const 
+\item 
+virtual void \hyperlink{classvsf_1_1Dirichlet__BC_a883de335cd0c7709fba4b58d43a4dd4d}{value\-\_\-list} (const std\-::vector$<$ Point$<$ dim $>$ $>$ \&points, std\-::vector$<$ double $>$ \&values, const unsigned int component=0) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Dirichlet\-\_\-\-B\-C$<$ dim $>$}
+
+The template class \hyperlink{classvsf_1_1Dirichlet__BC}{Dirichlet\-\_\-\-B\-C} computes the values of the non-\/homogeneous Dirichlet B\-C in each point. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvsf_1_1Dirichlet__BC_a3fc7bb6aef647db39b9f1d4664b3740b}{\index{vsf\-::\-Dirichlet\-\_\-\-B\-C@{vsf\-::\-Dirichlet\-\_\-\-B\-C}!Dirichlet\-\_\-\-B\-C@{Dirichlet\-\_\-\-B\-C}}
+\index{Dirichlet\-\_\-\-B\-C@{Dirichlet\-\_\-\-B\-C}!vsf::Dirichlet_BC@{vsf\-::\-Dirichlet\-\_\-\-B\-C}}
+\subsubsection[{Dirichlet\-\_\-\-B\-C}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Dirichlet\-\_\-\-B\-C}$<$ dim $>$\-::{\bf Dirichlet\-\_\-\-B\-C} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvsf_1_1Dirichlet__BC_a3fc7bb6aef647db39b9f1d4664b3740b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvsf_1_1Dirichlet__BC_a9996ee81e6748568e3b069c12afdd674}{\index{vsf\-::\-Dirichlet\-\_\-\-B\-C@{vsf\-::\-Dirichlet\-\_\-\-B\-C}!value@{value}}
+\index{value@{value}!vsf::Dirichlet_BC@{vsf\-::\-Dirichlet\-\_\-\-B\-C}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Dirichlet\-\_\-\-B\-C}$<$ dim $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{p, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Dirichlet__BC_a9996ee81e6748568e3b069c12afdd674}
+\hyperlink{classvsf_1_1Dirichlet__BC_a9996ee81e6748568e3b069c12afdd674}{Dirichlet\-\_\-\-B\-C\-::value} extracts the value in one point (\char`\"{}p\char`\"{}). To use a spatially variable B\-C modify this method accordingly. The displacement imposed at the boundary is only half the total displacement because we are only modeling half the domain.\hypertarget{classvsf_1_1Dirichlet__BC_a883de335cd0c7709fba4b58d43a4dd4d}{\index{vsf\-::\-Dirichlet\-\_\-\-B\-C@{vsf\-::\-Dirichlet\-\_\-\-B\-C}!value\-\_\-list@{value\-\_\-list}}
+\index{value\-\_\-list@{value\-\_\-list}!vsf::Dirichlet_BC@{vsf\-::\-Dirichlet\-\_\-\-B\-C}}
+\subsubsection[{value\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Dirichlet\-\_\-\-B\-C}$<$ dim $>$\-::value\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Point$<$ dim $>$ $>$ \&}]{points, }
+\item[{std\-::vector$<$ double $>$ \&}]{values, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Dirichlet__BC_a883de335cd0c7709fba4b58d43a4dd4d}
+\hyperlink{classvsf_1_1Dirichlet__BC_a883de335cd0c7709fba4b58d43a4dd4d}{Dirichlet\-\_\-\-B\-C\-::value\-\_\-list} allows to extract values for several points (\char`\"{}points\char`\"{}) at once and outputs them in a vector (\char`\"{}values\char`\"{}). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

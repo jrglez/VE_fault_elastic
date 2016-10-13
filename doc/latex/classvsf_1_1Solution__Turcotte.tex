@@ -1,0 +1,79 @@
+\hypertarget{classvsf_1_1Solution__Turcotte}{\section{vsf\-:\-:Solution\-\_\-\-Turcotte$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1Solution__Turcotte}\index{vsf\-::\-Solution\-\_\-\-Turcotte$<$ dim $>$@{vsf\-::\-Solution\-\_\-\-Turcotte$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Solution\-\_\-\-Turcotte$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvsf_1_1Solution__Turcotte}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvsf_1_1Solution__Turcotte_a30c7ada8fc223741d07f3e4f5f15f6be}{Solution\-\_\-\-Turcotte} ()
+\item 
+virtual double \hyperlink{classvsf_1_1Solution__Turcotte_a14a3516d1011ab7cb0bbc9e95ba281f2}{value} (const Point$<$ dim $>$ \&p, const unsigned int component=0) const 
+\item 
+virtual void \hyperlink{classvsf_1_1Solution__Turcotte_a1208e498d2ce30b41a47ebe2d8c8c058}{value\-\_\-list} (const std\-::vector$<$ Point$<$ dim $>$ $>$ \&points, std\-::vector$<$ double $>$ \&values, const unsigned int component=0) const 
+\item 
+virtual void \hyperlink{classvsf_1_1Solution__Turcotte_af641b6a8b3a9685773e61736160a5fb2}{get\-\_\-time} (const double \&t)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classvsf_1_1Solution__Turcotte_a5f58ba10fac1adc353f0e4889f9037b6}{time}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Solution\-\_\-\-Turcotte$<$ dim $>$}
+
+This class is used to compute the analytical solution of the surface displacement caused by a fault in a completely elastic medium. we use Turcotte and Spence viscouse model\cite{turcotte_spence_74}. and applyt the correspondence principle to obtain the viscoelastic solution. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvsf_1_1Solution__Turcotte_a30c7ada8fc223741d07f3e4f5f15f6be}{\index{vsf\-::\-Solution\-\_\-\-Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}!Solution\-\_\-\-Turcotte@{Solution\-\_\-\-Turcotte}}
+\index{Solution\-\_\-\-Turcotte@{Solution\-\_\-\-Turcotte}!vsf::Solution_Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}}
+\subsubsection[{Solution\-\_\-\-Turcotte}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Solution\-\_\-\-Turcotte}$<$ dim $>$\-::{\bf Solution\-\_\-\-Turcotte} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvsf_1_1Solution__Turcotte_a30c7ada8fc223741d07f3e4f5f15f6be}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvsf_1_1Solution__Turcotte_af641b6a8b3a9685773e61736160a5fb2}{\index{vsf\-::\-Solution\-\_\-\-Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}!get\-\_\-time@{get\-\_\-time}}
+\index{get\-\_\-time@{get\-\_\-time}!vsf::Solution_Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}}
+\subsubsection[{get\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Solution\-\_\-\-Turcotte}$<$ dim $>$\-::get\-\_\-time (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Solution__Turcotte_af641b6a8b3a9685773e61736160a5fb2}
+\hyperlink{classvsf_1_1Solution__Turcotte_af641b6a8b3a9685773e61736160a5fb2}{Solution\-\_\-\-Turcotte\-::get\-\_\-time} takes the given time and use it to populate the variable \char`\"{}time\char`\"{}. \hypertarget{classvsf_1_1Solution__Turcotte_a14a3516d1011ab7cb0bbc9e95ba281f2}{\index{vsf\-::\-Solution\-\_\-\-Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}!value@{value}}
+\index{value@{value}!vsf::Solution_Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Solution\-\_\-\-Turcotte}$<$ dim $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{p, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Solution__Turcotte_a14a3516d1011ab7cb0bbc9e95ba281f2}
+\hyperlink{classvsf_1_1Solution__Turcotte_a14a3516d1011ab7cb0bbc9e95ba281f2}{Solution\-\_\-\-Turcotte\-::value} extracts the value of the analytical solution in one point (\char`\"{}p\char`\"{}). This solution is only valid at the surface, therefore, if the point at which it will be evaluated is not in the surface, an exception will be thrown.\hypertarget{classvsf_1_1Solution__Turcotte_a1208e498d2ce30b41a47ebe2d8c8c058}{\index{vsf\-::\-Solution\-\_\-\-Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}!value\-\_\-list@{value\-\_\-list}}
+\index{value\-\_\-list@{value\-\_\-list}!vsf::Solution_Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}}
+\subsubsection[{value\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Solution\-\_\-\-Turcotte}$<$ dim $>$\-::value\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Point$<$ dim $>$ $>$ \&}]{points, }
+\item[{std\-::vector$<$ double $>$ \&}]{values, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Solution__Turcotte_a1208e498d2ce30b41a47ebe2d8c8c058}
+\hyperlink{classvsf_1_1Solution__Turcotte_a1208e498d2ce30b41a47ebe2d8c8c058}{Solution\-\_\-\-Turcotte\-::value\-\_\-list} allows to extract values for several points (\char`\"{}points\char`\"{}) at once and outputs them in a vector (\char`\"{}values\char`\"{}). 
+
+\subsection{Member Data Documentation}
+\hypertarget{classvsf_1_1Solution__Turcotte_a5f58ba10fac1adc353f0e4889f9037b6}{\index{vsf\-::\-Solution\-\_\-\-Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}!time@{time}}
+\index{time@{time}!vsf::Solution_Turcotte@{vsf\-::\-Solution\-\_\-\-Turcotte}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Solution\-\_\-\-Turcotte}$<$ dim $>$\-::time\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1Solution__Turcotte_a5f58ba10fac1adc353f0e4889f9037b6}
+Time (s) at which the displacement is calculated. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{classvsf_1_1Solution__Savage}{\section{vsf\-:\-:Solution\-\_\-\-Savage$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1Solution__Savage}\index{vsf\-::\-Solution\-\_\-\-Savage$<$ dim $>$@{vsf\-::\-Solution\-\_\-\-Savage$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Solution\-\_\-\-Savage$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvsf_1_1Solution__Savage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvsf_1_1Solution__Savage_a3cb39f3c76ce35ecaf75c83a9f8ec396}{Solution\-\_\-\-Savage} ()
+\item 
+virtual double \hyperlink{classvsf_1_1Solution__Savage_a7cc24cd1892ce82f00e0c8c02700897d}{value} (const Point$<$ dim $>$ \&p, const unsigned int component=0) const 
+\item 
+virtual void \hyperlink{classvsf_1_1Solution__Savage_a7dd79bf997cb39e1916fb0e28e8a7161}{value\-\_\-list} (const std\-::vector$<$ Point$<$ dim $>$ $>$ \&points, std\-::vector$<$ double $>$ \&values, const unsigned int component=0) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Solution\-\_\-\-Savage$<$ dim $>$}
+
+This class is used to compute the analytical solution of the surface displacement caused by a fault in a completely elastic medium using \cite{savage_burford_73}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvsf_1_1Solution__Savage_a3cb39f3c76ce35ecaf75c83a9f8ec396}{\index{vsf\-::\-Solution\-\_\-\-Savage@{vsf\-::\-Solution\-\_\-\-Savage}!Solution\-\_\-\-Savage@{Solution\-\_\-\-Savage}}
+\index{Solution\-\_\-\-Savage@{Solution\-\_\-\-Savage}!vsf::Solution_Savage@{vsf\-::\-Solution\-\_\-\-Savage}}
+\subsubsection[{Solution\-\_\-\-Savage}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Solution\-\_\-\-Savage}$<$ dim $>$\-::{\bf Solution\-\_\-\-Savage} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvsf_1_1Solution__Savage_a3cb39f3c76ce35ecaf75c83a9f8ec396}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvsf_1_1Solution__Savage_a7cc24cd1892ce82f00e0c8c02700897d}{\index{vsf\-::\-Solution\-\_\-\-Savage@{vsf\-::\-Solution\-\_\-\-Savage}!value@{value}}
+\index{value@{value}!vsf::Solution_Savage@{vsf\-::\-Solution\-\_\-\-Savage}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Solution\-\_\-\-Savage}$<$ dim $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{p, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Solution__Savage_a7cc24cd1892ce82f00e0c8c02700897d}
+\hyperlink{classvsf_1_1Solution__Savage_a7cc24cd1892ce82f00e0c8c02700897d}{Solution\-\_\-\-Savage\-::value} extracts the value of the analytical solution in one point (\char`\"{}p\char`\"{}). This solution is only valid at the surface, therefore, if the point at which it will be evaluated is not in the surface, an exception will be thrown.\hypertarget{classvsf_1_1Solution__Savage_a7dd79bf997cb39e1916fb0e28e8a7161}{\index{vsf\-::\-Solution\-\_\-\-Savage@{vsf\-::\-Solution\-\_\-\-Savage}!value\-\_\-list@{value\-\_\-list}}
+\index{value\-\_\-list@{value\-\_\-list}!vsf::Solution_Savage@{vsf\-::\-Solution\-\_\-\-Savage}}
+\subsubsection[{value\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Solution\-\_\-\-Savage}$<$ dim $>$\-::value\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Point$<$ dim $>$ $>$ \&}]{points, }
+\item[{std\-::vector$<$ double $>$ \&}]{values, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Solution__Savage_a7dd79bf997cb39e1916fb0e28e8a7161}
+\hyperlink{classvsf_1_1Solution__Savage_a7dd79bf997cb39e1916fb0e28e8a7161}{Solution\-\_\-\-Savage\-::value\-\_\-list} allows to extract values for several points (\char`\"{}points\char`\"{}) at once and outputs them in a vector (\char`\"{}values\char`\"{}). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

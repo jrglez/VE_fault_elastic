@@ -1,0 +1,65 @@
+\hypertarget{classvsf_1_1FunctionBase}{\section{vsf\-:\-:Function\-Base$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1FunctionBase}\index{vsf\-::\-Function\-Base$<$ dim $>$@{vsf\-::\-Function\-Base$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Function\-Base$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classvsf_1_1FunctionBase}
+\end{center}
+\end{figure}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{classvsf_1_1FunctionBase_ad2bf6791357d301b7d838b6188ef646e}{width} = 2.\-0e5
+\item 
+static const double \hyperlink{classvsf_1_1FunctionBase_acfffb54eadb79217d150a73e3797b25a}{height} = 1.\-0e5
+\item 
+static const double \hyperlink{classvsf_1_1FunctionBase_ae06ffa81ca26e9ead535d50596d852c1}{locked\-\_\-depth} = 0.\-25e5
+\item 
+static const double \hyperlink{classvsf_1_1FunctionBase_a70a9a9f8a1a73386e582c529338f2d5e}{boundary\-\_\-displacement} = 10
+\item 
+static const double \hyperlink{classvsf_1_1FunctionBase_a342cfaf03d11de71ca34234f48e8825e}{boundary\-\_\-stress} = 1e5
+\item 
+static const double \hyperlink{classvsf_1_1FunctionBase_a6fc26a27ba1d3a74dfe144a16d7893aa}{shear\-\_\-modulus} = 1.\-0e11
+\item 
+static const double \hyperlink{classvsf_1_1FunctionBase_af8a2b8711f526a821e1a37a396c9b48f}{viscosity} = 1e20
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Function\-Base$<$ dim $>$}
+
+We declare and define some function classes that represent the body force, the viscosity and the boundary values. For simplicity we have chosen to define all relevant parameters in a base class, which later will serve as the base class for the rest of the classes. These parameters are the width and height of the model (\hyperlink{classvsf_1_1FunctionBase_ad2bf6791357d301b7d838b6188ef646e}{Function\-Base\-::width} and \hyperlink{classvsf_1_1FunctionBase_acfffb54eadb79217d150a73e3797b25a}{Function\-Base\-::height}), lock depth $d$ (\hyperlink{classvsf_1_1FunctionBase_ae06ffa81ca26e9ead535d50596d852c1}{Function\-Base\-::locked\-\_\-depth}), the imposed displacement at the boundary $U$ (\hyperlink{classvsf_1_1FunctionBase_a70a9a9f8a1a73386e582c529338f2d5e}{Function\-Base\-::boundary\-\_\-displacement}) and the imposed stress at the boundary $S$ (\hyperlink{classvsf_1_1FunctionBase_a342cfaf03d11de71ca34234f48e8825e}{Function\-Base\-::boundary\-\_\-stress}).
+
+\begin{DoxyNote}{Note}
+These parameters have to be hardcoded here because the solution and boundary conditions classes are derived from \href{https://www.dealii.org/8.2.0/doxygen/deal.II/classFunction.html}{\tt Function} and are used directly by other deal.\-I\-I class functions. Adding any extra input parameters in a class that inherits from \href{https://www.dealii.org/8.2.0/doxygen/deal.II/classFunction.html}{\tt Function} would require modifying the source code. Another option would be to input these parameter via an input file (see deal.\-I\-I tutorial \href{https://www.dealii.org/8.2.0/doxygen/deal.II/step_33.html}{\tt step-\/33}).
+\end{DoxyNote}
+All the parameters used in the code are set here to keep things in order. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classvsf_1_1FunctionBase_a70a9a9f8a1a73386e582c529338f2d5e}{\index{vsf\-::\-Function\-Base@{vsf\-::\-Function\-Base}!boundary\-\_\-displacement@{boundary\-\_\-displacement}}
+\index{boundary\-\_\-displacement@{boundary\-\_\-displacement}!vsf::FunctionBase@{vsf\-::\-Function\-Base}}
+\subsubsection[{boundary\-\_\-displacement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const double {\bf vsf\-::\-Function\-Base}$<$ dim $>$\-::boundary\-\_\-displacement = 10\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classvsf_1_1FunctionBase_a70a9a9f8a1a73386e582c529338f2d5e}
+Displacement imposed in some boundaries. \hypertarget{classvsf_1_1FunctionBase_a342cfaf03d11de71ca34234f48e8825e}{\index{vsf\-::\-Function\-Base@{vsf\-::\-Function\-Base}!boundary\-\_\-stress@{boundary\-\_\-stress}}
+\index{boundary\-\_\-stress@{boundary\-\_\-stress}!vsf::FunctionBase@{vsf\-::\-Function\-Base}}
+\subsubsection[{boundary\-\_\-stress}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const double {\bf vsf\-::\-Function\-Base}$<$ dim $>$\-::boundary\-\_\-stress = 1e5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classvsf_1_1FunctionBase_a342cfaf03d11de71ca34234f48e8825e}
+Stress imposed in some boundaries. \hypertarget{classvsf_1_1FunctionBase_acfffb54eadb79217d150a73e3797b25a}{\index{vsf\-::\-Function\-Base@{vsf\-::\-Function\-Base}!height@{height}}
+\index{height@{height}!vsf::FunctionBase@{vsf\-::\-Function\-Base}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const double {\bf vsf\-::\-Function\-Base}$<$ dim $>$\-::height = 1.\-0e5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classvsf_1_1FunctionBase_acfffb54eadb79217d150a73e3797b25a}
+Model's height. \hypertarget{classvsf_1_1FunctionBase_ae06ffa81ca26e9ead535d50596d852c1}{\index{vsf\-::\-Function\-Base@{vsf\-::\-Function\-Base}!locked\-\_\-depth@{locked\-\_\-depth}}
+\index{locked\-\_\-depth@{locked\-\_\-depth}!vsf::FunctionBase@{vsf\-::\-Function\-Base}}
+\subsubsection[{locked\-\_\-depth}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const double {\bf vsf\-::\-Function\-Base}$<$ dim $>$\-::locked\-\_\-depth = 0.\-25e5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classvsf_1_1FunctionBase_ae06ffa81ca26e9ead535d50596d852c1}
+Depth of the locked region. \hypertarget{classvsf_1_1FunctionBase_a6fc26a27ba1d3a74dfe144a16d7893aa}{\index{vsf\-::\-Function\-Base@{vsf\-::\-Function\-Base}!shear\-\_\-modulus@{shear\-\_\-modulus}}
+\index{shear\-\_\-modulus@{shear\-\_\-modulus}!vsf::FunctionBase@{vsf\-::\-Function\-Base}}
+\subsubsection[{shear\-\_\-modulus}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const double {\bf vsf\-::\-Function\-Base}$<$ dim $>$\-::shear\-\_\-modulus = 1.\-0e11\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classvsf_1_1FunctionBase_a6fc26a27ba1d3a74dfe144a16d7893aa}
+Reference shear modulus. \hypertarget{classvsf_1_1FunctionBase_af8a2b8711f526a821e1a37a396c9b48f}{\index{vsf\-::\-Function\-Base@{vsf\-::\-Function\-Base}!viscosity@{viscosity}}
+\index{viscosity@{viscosity}!vsf::FunctionBase@{vsf\-::\-Function\-Base}}
+\subsubsection[{viscosity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const double {\bf vsf\-::\-Function\-Base}$<$ dim $>$\-::viscosity = 1e20\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classvsf_1_1FunctionBase_af8a2b8711f526a821e1a37a396c9b48f}
+Reference viscosity. \hypertarget{classvsf_1_1FunctionBase_ad2bf6791357d301b7d838b6188ef646e}{\index{vsf\-::\-Function\-Base@{vsf\-::\-Function\-Base}!width@{width}}
+\index{width@{width}!vsf::FunctionBase@{vsf\-::\-Function\-Base}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const double {\bf vsf\-::\-Function\-Base}$<$ dim $>$\-::width = 2.\-0e5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classvsf_1_1FunctionBase_ad2bf6791357d301b7d838b6188ef646e}
+Model's width. Will not be used here, but we want to keep input parameters together. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

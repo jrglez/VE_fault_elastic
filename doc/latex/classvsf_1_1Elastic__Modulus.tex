@@ -1,0 +1,59 @@
+\hypertarget{classvsf_1_1Elastic__Modulus}{\section{vsf\-:\-:Elastic\-\_\-\-Modulus$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1Elastic__Modulus}\index{vsf\-::\-Elastic\-\_\-\-Modulus$<$ dim $>$@{vsf\-::\-Elastic\-\_\-\-Modulus$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Elastic\-\_\-\-Modulus$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvsf_1_1Elastic__Modulus}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvsf_1_1Elastic__Modulus_a4ef9d26c474d5448aeefa50b05edadeb}{Elastic\-\_\-\-Modulus} ()
+\item 
+virtual double \hyperlink{classvsf_1_1Elastic__Modulus_a9fc64a88cf8f3d00f7eed85025bf61e2}{value} (const Point$<$ dim $>$ \&p, const unsigned int component=0) const 
+\item 
+virtual void \hyperlink{classvsf_1_1Elastic__Modulus_a80ff3e43c923615f10db2dd5fcecf7ad}{value\-\_\-list} (const std\-::vector$<$ Point$<$ dim $>$ $>$ \&points, std\-::vector$<$ double $>$ \&values, const unsigned int component=0) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Elastic\-\_\-\-Modulus$<$ dim $>$}
+
+The template class \hyperlink{classvsf_1_1Elastic__Modulus}{Elastic\-\_\-\-Modulus} gives the value of the elastic modulus in the requested point/s 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvsf_1_1Elastic__Modulus_a4ef9d26c474d5448aeefa50b05edadeb}{\index{vsf\-::\-Elastic\-\_\-\-Modulus@{vsf\-::\-Elastic\-\_\-\-Modulus}!Elastic\-\_\-\-Modulus@{Elastic\-\_\-\-Modulus}}
+\index{Elastic\-\_\-\-Modulus@{Elastic\-\_\-\-Modulus}!vsf::Elastic_Modulus@{vsf\-::\-Elastic\-\_\-\-Modulus}}
+\subsubsection[{Elastic\-\_\-\-Modulus}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Elastic\-\_\-\-Modulus}$<$ dim $>$\-::{\bf Elastic\-\_\-\-Modulus} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvsf_1_1Elastic__Modulus_a4ef9d26c474d5448aeefa50b05edadeb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvsf_1_1Elastic__Modulus_a9fc64a88cf8f3d00f7eed85025bf61e2}{\index{vsf\-::\-Elastic\-\_\-\-Modulus@{vsf\-::\-Elastic\-\_\-\-Modulus}!value@{value}}
+\index{value@{value}!vsf::Elastic_Modulus@{vsf\-::\-Elastic\-\_\-\-Modulus}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Elastic\-\_\-\-Modulus}$<$ dim $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{p, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Elastic__Modulus_a9fc64a88cf8f3d00f7eed85025bf61e2}
+\hyperlink{classvsf_1_1Elastic__Modulus_a9fc64a88cf8f3d00f7eed85025bf61e2}{Elastic\-\_\-\-Modulus\-::value} extracts the value in one point (\char`\"{}p\char`\"{}). In the current implementation we consider a uniform elastic modulus. To use a spatially variable elastic modulus modify this method accordingly. \hypertarget{classvsf_1_1Elastic__Modulus_a80ff3e43c923615f10db2dd5fcecf7ad}{\index{vsf\-::\-Elastic\-\_\-\-Modulus@{vsf\-::\-Elastic\-\_\-\-Modulus}!value\-\_\-list@{value\-\_\-list}}
+\index{value\-\_\-list@{value\-\_\-list}!vsf::Elastic_Modulus@{vsf\-::\-Elastic\-\_\-\-Modulus}}
+\subsubsection[{value\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Elastic\-\_\-\-Modulus}$<$ dim $>$\-::value\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Point$<$ dim $>$ $>$ \&}]{points, }
+\item[{std\-::vector$<$ double $>$ \&}]{values, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Elastic__Modulus_a80ff3e43c923615f10db2dd5fcecf7ad}
+\hyperlink{classvsf_1_1Elastic__Modulus_a80ff3e43c923615f10db2dd5fcecf7ad}{Elastic\-\_\-\-Modulus\-::value\-\_\-list} allows to extract values for several points (\char`\"{}points\char`\"{}) at once and outputs them in a vector (\char`\"{}values\char`\"{}). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

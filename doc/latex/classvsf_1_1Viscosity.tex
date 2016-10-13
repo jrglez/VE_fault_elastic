@@ -1,0 +1,59 @@
+\hypertarget{classvsf_1_1Viscosity}{\section{vsf\-:\-:Viscosity$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1Viscosity}\index{vsf\-::\-Viscosity$<$ dim $>$@{vsf\-::\-Viscosity$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Viscosity$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvsf_1_1Viscosity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvsf_1_1Viscosity_a679e1dadfa6b003cc17f8fe9fa2bdadc}{Viscosity} ()
+\item 
+virtual double \hyperlink{classvsf_1_1Viscosity_adf3ee3f49d4d9695adae1f56efa69411}{value} (const Point$<$ dim $>$ \&p, const unsigned int component=0) const 
+\item 
+virtual void \hyperlink{classvsf_1_1Viscosity_a59d7fac27c14d4145634ed84d6ea40ee}{value\-\_\-list} (const std\-::vector$<$ Point$<$ dim $>$ $>$ \&points, std\-::vector$<$ double $>$ \&values, const unsigned int component=0) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Viscosity$<$ dim $>$}
+
+The template class \hyperlink{classvsf_1_1Viscosity}{Viscosity} gives the value of the viscosity in the requested point/s 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvsf_1_1Viscosity_a679e1dadfa6b003cc17f8fe9fa2bdadc}{\index{vsf\-::\-Viscosity@{vsf\-::\-Viscosity}!Viscosity@{Viscosity}}
+\index{Viscosity@{Viscosity}!vsf::Viscosity@{vsf\-::\-Viscosity}}
+\subsubsection[{Viscosity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Viscosity}$<$ dim $>$\-::{\bf Viscosity} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvsf_1_1Viscosity_a679e1dadfa6b003cc17f8fe9fa2bdadc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvsf_1_1Viscosity_adf3ee3f49d4d9695adae1f56efa69411}{\index{vsf\-::\-Viscosity@{vsf\-::\-Viscosity}!value@{value}}
+\index{value@{value}!vsf::Viscosity@{vsf\-::\-Viscosity}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Viscosity}$<$ dim $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{p, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Viscosity_adf3ee3f49d4d9695adae1f56efa69411}
+\hyperlink{classvsf_1_1Viscosity_adf3ee3f49d4d9695adae1f56efa69411}{Viscosity\-::value} extracts the value in one point (\char`\"{}p\char`\"{}). In the current implementation we consider a uniform shear modulus. To use a spatially variable shear modulus modify this method accordingly. \hypertarget{classvsf_1_1Viscosity_a59d7fac27c14d4145634ed84d6ea40ee}{\index{vsf\-::\-Viscosity@{vsf\-::\-Viscosity}!value\-\_\-list@{value\-\_\-list}}
+\index{value\-\_\-list@{value\-\_\-list}!vsf::Viscosity@{vsf\-::\-Viscosity}}
+\subsubsection[{value\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Viscosity}$<$ dim $>$\-::value\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Point$<$ dim $>$ $>$ \&}]{points, }
+\item[{std\-::vector$<$ double $>$ \&}]{values, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Viscosity_a59d7fac27c14d4145634ed84d6ea40ee}
+\hyperlink{classvsf_1_1Viscosity_a59d7fac27c14d4145634ed84d6ea40ee}{Viscosity\-::value\-\_\-list} allows to extract values for several points (\char`\"{}points\char`\"{}) at once and outputs them in a vector (\char`\"{}values\char`\"{}). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{classvsf_1_1Neumann__BC}{\section{vsf\-:\-:Neumann\-\_\-\-B\-C$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1Neumann__BC}\index{vsf\-::\-Neumann\-\_\-\-B\-C$<$ dim $>$@{vsf\-::\-Neumann\-\_\-\-B\-C$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Neumann\-\_\-\-B\-C$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvsf_1_1Neumann__BC}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvsf_1_1Neumann__BC_a8b36c26330ec21aa09f6887f1a49a329}{Neumann\-\_\-\-B\-C} ()
+\item 
+virtual double \hyperlink{classvsf_1_1Neumann__BC_addccdf65c1e5367b004289db3b0b96a5}{value} (const Point$<$ dim $>$ \&p, const unsigned int component=0) const 
+\item 
+virtual void \hyperlink{classvsf_1_1Neumann__BC_a2e1fe62899a58c70bbb4e9021858427e}{value\-\_\-list} (const std\-::vector$<$ Point$<$ dim $>$ $>$ \&points, std\-::vector$<$ double $>$ \&values, const unsigned int component=0) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Neumann\-\_\-\-B\-C$<$ dim $>$}
+
+The template class \hyperlink{classvsf_1_1Neumann__BC}{Neumann\-\_\-\-B\-C} computes the values of the non-\/homogeneous B\-C in each point. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvsf_1_1Neumann__BC_a8b36c26330ec21aa09f6887f1a49a329}{\index{vsf\-::\-Neumann\-\_\-\-B\-C@{vsf\-::\-Neumann\-\_\-\-B\-C}!Neumann\-\_\-\-B\-C@{Neumann\-\_\-\-B\-C}}
+\index{Neumann\-\_\-\-B\-C@{Neumann\-\_\-\-B\-C}!vsf::Neumann_BC@{vsf\-::\-Neumann\-\_\-\-B\-C}}
+\subsubsection[{Neumann\-\_\-\-B\-C}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Neumann\-\_\-\-B\-C}$<$ dim $>$\-::{\bf Neumann\-\_\-\-B\-C} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvsf_1_1Neumann__BC_a8b36c26330ec21aa09f6887f1a49a329}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvsf_1_1Neumann__BC_addccdf65c1e5367b004289db3b0b96a5}{\index{vsf\-::\-Neumann\-\_\-\-B\-C@{vsf\-::\-Neumann\-\_\-\-B\-C}!value@{value}}
+\index{value@{value}!vsf::Neumann_BC@{vsf\-::\-Neumann\-\_\-\-B\-C}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Neumann\-\_\-\-B\-C}$<$ dim $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{p, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Neumann__BC_addccdf65c1e5367b004289db3b0b96a5}
+\hyperlink{classvsf_1_1Neumann__BC_addccdf65c1e5367b004289db3b0b96a5}{Neumann\-\_\-\-B\-C\-::value} extracts the value in one point (\char`\"{}p\char`\"{}). To use a spatially variable B\-C modify this method accordingly. \hypertarget{classvsf_1_1Neumann__BC_a2e1fe62899a58c70bbb4e9021858427e}{\index{vsf\-::\-Neumann\-\_\-\-B\-C@{vsf\-::\-Neumann\-\_\-\-B\-C}!value\-\_\-list@{value\-\_\-list}}
+\index{value\-\_\-list@{value\-\_\-list}!vsf::Neumann_BC@{vsf\-::\-Neumann\-\_\-\-B\-C}}
+\subsubsection[{value\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Neumann\-\_\-\-B\-C}$<$ dim $>$\-::value\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Point$<$ dim $>$ $>$ \&}]{points, }
+\item[{std\-::vector$<$ double $>$ \&}]{values, }
+\item[{const unsigned int}]{component = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classvsf_1_1Neumann__BC_a2e1fe62899a58c70bbb4e9021858427e}
+\hyperlink{classvsf_1_1Neumann__BC_a2e1fe62899a58c70bbb4e9021858427e}{Neumann\-\_\-\-B\-C\-::value\-\_\-list} allows to extract values for several points (\char`\"{}points\char`\"{}) at once and outputs them in a vector (\char`\"{}values\char`\"{}). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

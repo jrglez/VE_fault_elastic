@@ -1,0 +1,513 @@
+\hypertarget{classvsf_1_1ApShear}{\section{vsf\-:\-:Ap\-Shear$<$ dim $>$ Class Template Reference}
+\label{classvsf_1_1ApShear}\index{vsf\-::\-Ap\-Shear$<$ dim $>$@{vsf\-::\-Ap\-Shear$<$ dim $>$}}
+}
+Inheritance diagram for vsf\-:\-:Ap\-Shear$<$ dim $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvsf_1_1ApShear}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8c}{Refinement\-Mode} \{ \hyperlink{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8ca4d42958e34994e37831e0e390b554a22}{global\-\_\-refinement}, 
+\hyperlink{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8ca6d458d887ac9b2cdfc9bdf078a2d0f78}{adaptive\-\_\-refinement}
+ \}
+\item 
+enum \hyperlink{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354d}{Model} \{ \hyperlink{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354dab1d7d25f092b95270851c3cf1faa7bb5}{turcotte}, 
+\hyperlink{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354da218f8a8439447f9d74a62070ad9086dc}{savage}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvsf_1_1ApShear_a58df51f254eb8ea07f1523c0d76246fc}{Ap\-Shear} (const Finite\-Element$<$ dim $>$ \&\hyperlink{classvsf_1_1ApShear_a228388a897a688b79d0800f3bb18697f}{fe}, const Finite\-Element$<$ dim $>$ \&\hyperlink{classvsf_1_1ApShear_a3c2f9d0e479ed2ebcb3660a3b7b72aee}{history\-\_\-fe}, const unsigned int \hyperlink{classvsf_1_1ApShear_ae4927f95e4a98c107d743a078a9b1bc8}{degree}, const \hyperlink{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8c}{Refinement\-Mode} \hyperlink{classvsf_1_1ApShear_a523d3e34e242a9dbcf1d727dc17874b6}{refinement\-\_\-mode}, const \hyperlink{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354d}{Model} \hyperlink{classvsf_1_1ApShear_a3a6fb4045df9297aea20326cb0df5748}{model})
+\item 
+\hyperlink{classvsf_1_1ApShear_a7d7cb7564f9d34ccd1a9d4183225cab7}{$\sim$\-Ap\-Shear} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a8c366c00d028013a6949ee94786038ac}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvsf_1_1ApShear_a49ba2c773ca4f6a1946dee0d08e76901}{do\-\_\-first\-\_\-time\-\_\-step} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a230bde382d9f71b56181ae943634611e}{do\-\_\-time\-\_\-step} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_ab12b87e8d50262d7735c5ba0aab1549f}{make\-\_\-grid\-\_\-turcotte} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a265e55ba004056c96ab59aa633d5510f}{make\-\_\-grid\-\_\-savage} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_ae0c1413d01e98526e4a61a7324bf2ae0}{refine\-\_\-grid} (const unsigned int min\-\_\-grid\-\_\-level, const unsigned int max\-\_\-grid\-\_\-level)
+\item 
+void \hyperlink{classvsf_1_1ApShear_ad0d3a17afc6092f53560a50fd21c82f3}{qpoints\-\_\-to\-\_\-\-D\-G} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_accf1d57fc6f81758bf06a93ef70f74c4}{D\-G\-\_\-to\-\_\-qpoints} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_aa64a11292b5664242bb982a1a400fae0}{setup\-\_\-system} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a7e74ebe08f8b6586a71c606a64ab4db4}{setup\-\_\-quadrature\-\_\-point\-\_\-history} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a6b2acd54f930d5deac94064923e1aa7b}{update\-\_\-quadrature\-\_\-point\-\_\-history} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a53c9284a86fc90a817ddad24eaf18569}{assemble\-\_\-system} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a7e90fa26f6c78252f8e4592d5fc7adcf}{solve} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_ab58464c123140aaa9e231ddea2e94a03}{get\-\_\-time\-\_\-step} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_aa7a681d59cd2147f021245e7cccc0d32}{compare\-\_\-solutions\-\_\-turcotte} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_a2b1bb3ca132f62ccf3c2ca1e4e81f97c}{compare\-\_\-solutions\-\_\-savage} ()
+\item 
+void \hyperlink{classvsf_1_1ApShear_af10b1bbda00ef235b3bff742831890bf}{output\-\_\-results} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned int \hyperlink{classvsf_1_1ApShear_ae4927f95e4a98c107d743a078a9b1bc8}{degree}
+\item 
+Triangulation$<$ dim $>$ \hyperlink{classvsf_1_1ApShear_a53d0e9d3fdabcac44cc7c6408ace451b}{triangulation}
+\item 
+Do\-F\-Handler$<$ dim $>$ \hyperlink{classvsf_1_1ApShear_a55da0ced5f7ee7c16a518073f4524ffb}{dof\-\_\-handler}
+\item 
+Do\-F\-Handler$<$ dim $>$ \hyperlink{classvsf_1_1ApShear_acdcfb9ec77c56722ce42173f7599c336}{history\-\_\-dof\-\_\-handler}
+\item 
+const Q\-Gauss$<$ dim $>$ \hyperlink{classvsf_1_1ApShear_a2926794d4cbeed7550443a4999868110}{quadrature\-\_\-formula}
+\item 
+Smart\-Pointer$<$ const \\*
+Finite\-Element$<$ dim $>$ $>$ \hyperlink{classvsf_1_1ApShear_a228388a897a688b79d0800f3bb18697f}{fe}
+\item 
+Smart\-Pointer$<$ const \\*
+Finite\-Element$<$ dim $>$ $>$ \hyperlink{classvsf_1_1ApShear_a3c2f9d0e479ed2ebcb3660a3b7b72aee}{history\-\_\-fe}
+\item 
+Constraint\-Matrix \hyperlink{classvsf_1_1ApShear_afcd25b4c0be9a4c7e69165e6eb151240}{constraints}
+\item 
+Sparsity\-Pattern \hyperlink{classvsf_1_1ApShear_a065cb85ed84df073fd1b726667eebcc3}{sparsity\-\_\-pattern}
+\item 
+Sparse\-Matrix$<$ double $>$ \hyperlink{classvsf_1_1ApShear_a8735861f0a5530262407cd52b7a1b386}{system\-\_\-matrix}
+\item 
+Vector$<$ double $>$ \hyperlink{classvsf_1_1ApShear_ab1046cf38cb6535dd0ab78793bccf6a1}{system\-\_\-rhs}
+\item 
+Vector$<$ double $>$ \hyperlink{classvsf_1_1ApShear_ae4ee8cb26cbb92aa25fa91d2eb2198db}{solution}
+\item 
+std\-::vector$<$ \hyperlink{structvsf_1_1PointHistory}{Point\-History}$<$ dim $>$ $>$ \hyperlink{classvsf_1_1ApShear_aeb702a26aef2b0a7d0d27d46909b81b9}{quadrature\-\_\-point\-\_\-history}
+\item 
+std\-::vector$<$ Vector$<$ double $>$ $>$ \hyperlink{classvsf_1_1ApShear_ab47e19f00b1a5475699673c44d48ab8d}{history\-\_\-field}
+\item 
+const \hyperlink{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8c}{Refinement\-Mode} \hyperlink{classvsf_1_1ApShear_a523d3e34e242a9dbcf1d727dc17874b6}{refinement\-\_\-mode}
+\item 
+const \hyperlink{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354d}{Model} \hyperlink{classvsf_1_1ApShear_a3a6fb4045df9297aea20326cb0df5748}{model}
+\item 
+const unsigned int \hyperlink{classvsf_1_1ApShear_ab02322073eb961685e8daef27729bf8d}{n\-\_\-initial\-\_\-global\-\_\-refinement}
+\item 
+const unsigned int \hyperlink{classvsf_1_1ApShear_a5c702ecbc19d28d835e666c8ee87c4eb}{n\-\_\-pre\-\_\-refinment}
+\item 
+unsigned int \hyperlink{classvsf_1_1ApShear_aa8a20bee076f8edea5090fe587af2630}{step}
+\item 
+double \hyperlink{classvsf_1_1ApShear_ab11c93d8c80fc10976c8fb91a733cf92}{time\-\_\-step}
+\item 
+double \hyperlink{classvsf_1_1ApShear_ab4bd5313e37b8819910d35aaae0a2373}{total\-\_\-time}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classvsf_1_1ApShear_a9aec407d8269d51336f50f3a9d94b53b}{surface\-\_\-q\-\_\-points}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classvsf_1_1ApShear_a96a76f66c7155491bfe3d3c50d576fe9}{surface\-\_\-analytical\-\_\-solution}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classvsf_1_1ApShear_adbc4b0f8e2a3282b27241a2088f9717d}{surface\-\_\-numerical\-\_\-solution}
+\item 
+double \hyperlink{classvsf_1_1ApShear_a980e61d73be5cae2b8e8498b9ffc087a}{error}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class vsf\-::\-Ap\-Shear$<$ dim $>$}
+
+The main class of the code, contains all the functions that do the job of setting up and solving the model.
+
+\begin{DoxyNote}{Note}
+Since the model parameters have been set in \hyperlink{classvsf_1_1FunctionBase}{Function\-Base}, this new class will also inherit from it. 
+\end{DoxyNote}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354d}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!Model@{Model}}
+\index{Model@{Model}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{Model}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ enum {\bf vsf\-::\-Ap\-Shear\-::\-Model}}}\label{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{turcotte@{turcotte}!vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}}\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!turcotte@{turcotte}}\item[{\em 
+\hypertarget{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354dab1d7d25f092b95270851c3cf1faa7bb5}{turcotte}\label{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354dab1d7d25f092b95270851c3cf1faa7bb5}
+}]\index{savage@{savage}!vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}}\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!savage@{savage}}\item[{\em 
+\hypertarget{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354da218f8a8439447f9d74a62070ad9086dc}{savage}\label{classvsf_1_1ApShear_a354ce33d5e60761e975bdb924119354da218f8a8439447f9d74a62070ad9086dc}
+}]\end{description}
+\end{Desc}
+\hypertarget{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8c}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!Refinement\-Mode@{Refinement\-Mode}}
+\index{Refinement\-Mode@{Refinement\-Mode}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{Refinement\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ enum {\bf vsf\-::\-Ap\-Shear\-::\-Refinement\-Mode}}}\label{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8c}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{global\-\_\-refinement@{global\-\_\-refinement}!vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}}\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!global\-\_\-refinement@{global\-\_\-refinement}}\item[{\em 
+\hypertarget{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8ca4d42958e34994e37831e0e390b554a22}{global\-\_\-refinement}\label{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8ca4d42958e34994e37831e0e390b554a22}
+}]\index{adaptive\-\_\-refinement@{adaptive\-\_\-refinement}!vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}}\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!adaptive\-\_\-refinement@{adaptive\-\_\-refinement}}\item[{\em 
+\hypertarget{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8ca6d458d887ac9b2cdfc9bdf078a2d0f78}{adaptive\-\_\-refinement}\label{classvsf_1_1ApShear_aef8049bf5f942237a19e8b88ddc19e8ca6d458d887ac9b2cdfc9bdf078a2d0f78}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvsf_1_1ApShear_a58df51f254eb8ea07f1523c0d76246fc}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!Ap\-Shear@{Ap\-Shear}}
+\index{Ap\-Shear@{Ap\-Shear}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{Ap\-Shear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::{\bf Ap\-Shear} (
+\begin{DoxyParamCaption}
+\item[{const Finite\-Element$<$ dim $>$ \&}]{fe, }
+\item[{const Finite\-Element$<$ dim $>$ \&}]{history\-\_\-fe, }
+\item[{const unsigned int}]{degree, }
+\item[{const {\bf Refinement\-Mode}}]{refinement\-\_\-mode, }
+\item[{const {\bf Model}}]{model}
+\end{DoxyParamCaption}
+)}}\label{classvsf_1_1ApShear_a58df51f254eb8ea07f1523c0d76246fc}
+
+\begin{DoxyParams}{Parameters}
+{\em fe} & The code is written so different elements can be used and are defined as input parameters. \\
+\hline
+{\em history\-\_\-fe} & F\-E to store history data \\
+\hline
+{\em degree} & To be consistent, we define the degree of the finite elements as an input parameter. \\
+\hline
+{\em refinement\-\_\-mode} & The mesh can be refined either globally (global\-\_\-refinement) or adaptively (adaptive\-\_\-refinement), which one to use is defined as an input parameters \\
+\hline
+{\em model} & The code can be used to simmulate the deformation caused by a fault using two models. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvsf_1_1ApShear_a7d7cb7564f9d34ccd1a9d4183225cab7}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!$\sim$\-Ap\-Shear@{$\sim$\-Ap\-Shear}}
+\index{$\sim$\-Ap\-Shear@{$\sim$\-Ap\-Shear}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{$\sim$\-Ap\-Shear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::$\sim${\bf Ap\-Shear} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classvsf_1_1ApShear_a7d7cb7564f9d34ccd1a9d4183225cab7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvsf_1_1ApShear_a53c9284a86fc90a817ddad24eaf18569}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!assemble\-\_\-system@{assemble\-\_\-system}}
+\index{assemble\-\_\-system@{assemble\-\_\-system}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{assemble\-\_\-system}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::assemble\-\_\-system (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a53c9284a86fc90a817ddad24eaf18569}
+Assemble stiffness matrix and R\-H\-S.
+
+The stiffness matrix and R\-H\-S are assembled here. To assemble the stiffness matrix and R\-H\-S for the given problem we assemble the local matrices for each element and the transfer it to the global matrix.
+
+Apply homogeneous Neumann boundary conditions. We loop over all the faces in each cell. We check if that face is in a boundary and if it is a boundary of type 3 (non-\/homogeneous Neumann boundary conditions), to those faces we add the corresponing contribution.\hypertarget{classvsf_1_1ApShear_a2b1bb3ca132f62ccf3c2ca1e4e81f97c}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!compare\-\_\-solutions\-\_\-savage@{compare\-\_\-solutions\-\_\-savage}}
+\index{compare\-\_\-solutions\-\_\-savage@{compare\-\_\-solutions\-\_\-savage}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{compare\-\_\-solutions\-\_\-savage}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::compare\-\_\-solutions\-\_\-savage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a2b1bb3ca132f62ccf3c2ca1e4e81f97c}
+The numerical solution is compared against Savage and Burford Model
+
+This function will take care of computing and storing the difference between the numerical solution and the analytical solution from Turcotte and Spence Model \cite{turcotte_spence_74}. At the end we will output the results in several graphs. The comparison will stored in three different variables\-:
+\begin{DoxyItemize}
+\item analytical\-\_\-solution\-: Analytical solution computed at each quadrature point of the final mesh.
+\item surface\-\_\-numerical\-\_\-solution\-: Numerical solution in each quadrature point at each refinement cycle.
+\item integrated\-\_\-diff\-: Integrated difference between both solutions using the L1 norm. 
+\end{DoxyItemize}First we need to run a loop over every cell and every quadrature point to determine if they are located at the surface, if so, we will compute the analytical solution and extract the numerical solution to store them in analytical\-\_\-solution and numerical\-\_\-solution. Once we have both solutions at the surface, we will compute the integrated difference between them and we will store it in integrated\-\_\-diff.\hypertarget{classvsf_1_1ApShear_aa7a681d59cd2147f021245e7cccc0d32}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!compare\-\_\-solutions\-\_\-turcotte@{compare\-\_\-solutions\-\_\-turcotte}}
+\index{compare\-\_\-solutions\-\_\-turcotte@{compare\-\_\-solutions\-\_\-turcotte}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{compare\-\_\-solutions\-\_\-turcotte}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::compare\-\_\-solutions\-\_\-turcotte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_aa7a681d59cd2147f021245e7cccc0d32}
+The numerical solution is compared against Turcotte and Spence Model
+
+This function will take care of computing and storing the difference between the numerical solution and the analytical solution from Turcotte and Spence Model \cite{turcotte_spence_74}. At the end we will output the results in several graphs. The comparison will stored in three different variables\-:
+\begin{DoxyItemize}
+\item analytical\-\_\-solution\-: Analytical solution computed at each quadrature point of the final mesh.
+\item surface\-\_\-numerical\-\_\-solution\-: Numerical solution in each quadrature point at each refinement cycle.
+\item integrated\-\_\-diff\-: Integrated difference between both solutions using the L1 norm. 
+\end{DoxyItemize}First we need to run a loop over every cell and every quadrature point to determine if they are located at the surface, if so, we will compute the analytical solution and extract the numerical solution to store them in analytical\-\_\-solution and numerical\-\_\-solution. Once we have both solutions at the surface, we will compute the integrated difference between them and we will store it in integrated\-\_\-diff.\hypertarget{classvsf_1_1ApShear_accf1d57fc6f81758bf06a93ef70f74c4}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!D\-G\-\_\-to\-\_\-qpoints@{D\-G\-\_\-to\-\_\-qpoints}}
+\index{D\-G\-\_\-to\-\_\-qpoints@{D\-G\-\_\-to\-\_\-qpoints}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{D\-G\-\_\-to\-\_\-qpoints}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::D\-G\-\_\-to\-\_\-qpoints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_accf1d57fc6f81758bf06a93ef70f74c4}
+The information stored in a Discontinious Galerking space is moved to the quadrature points
+
+After the mesh has been refined, we need to transfer the viscous strain back to the quadrature points. For more details see \href{https://www.dealii.org/8.2.0/doxygen/deal.II/step_18.html#Refinementduringtimesteps}{\tt Step-\/18} \hypertarget{classvsf_1_1ApShear_a49ba2c773ca4f6a1946dee0d08e76901}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!do\-\_\-first\-\_\-time\-\_\-step@{do\-\_\-first\-\_\-time\-\_\-step}}
+\index{do\-\_\-first\-\_\-time\-\_\-step@{do\-\_\-first\-\_\-time\-\_\-step}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{do\-\_\-first\-\_\-time\-\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::do\-\_\-first\-\_\-time\-\_\-step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a49ba2c773ca4f6a1946dee0d08e76901}
+Create the initial mesh and perform preliminary refinements and solve for the initial time step
+
+In the first time step we will create a uniform grid and set the boundary conditions depending on the model that we want to solve. Then we will solve the problem and refine the mesh adaptively several times \hypertarget{classvsf_1_1ApShear_a230bde382d9f71b56181ae943634611e}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!do\-\_\-time\-\_\-step@{do\-\_\-time\-\_\-step}}
+\index{do\-\_\-time\-\_\-step@{do\-\_\-time\-\_\-step}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{do\-\_\-time\-\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::do\-\_\-time\-\_\-step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a230bde382d9f71b56181ae943634611e}
+Solve for successive time steps (includes mesh refinement every several time steps).
+
+In successive time steps we will update the viscous strain (using the solution and the viscous strain from the last time step) and we will solve again. The mesh will be refined adaptively every several time steps. \hypertarget{classvsf_1_1ApShear_ab58464c123140aaa9e231ddea2e94a03}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!get\-\_\-time\-\_\-step@{get\-\_\-time\-\_\-step}}
+\index{get\-\_\-time\-\_\-step@{get\-\_\-time\-\_\-step}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{get\-\_\-time\-\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::get\-\_\-time\-\_\-step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ab58464c123140aaa9e231ddea2e94a03}
+Obtain the the time step increase
+
+We need to calculate the size of each time step. We choose a size such that, the algorithm is stable \cite{cormeau_75} \cite{yamasaki_houseman_12:}
+
+\[ \Delta t = \frac{\eta}{24 \mu} \]
+
+We use the minimum value of $ \Delta t $ in the whole domain. Therefore, we need to compute the time increment at every quadrature point.
+
+\begin{DoxyNote}{Note}
+In the current implementation, both the shear modulus and the viscosity are uniform, and so will be the time step increment. However, we will still calculate the time step increment at every point, so it is easier to implement non-\/uniform parameters in the future. 
+\end{DoxyNote}
+\hypertarget{classvsf_1_1ApShear_a265e55ba004056c96ab59aa633d5510f}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!make\-\_\-grid\-\_\-savage@{make\-\_\-grid\-\_\-savage}}
+\index{make\-\_\-grid\-\_\-savage@{make\-\_\-grid\-\_\-savage}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{make\-\_\-grid\-\_\-savage}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::make\-\_\-grid\-\_\-savage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a265e55ba004056c96ab59aa633d5510f}
+Create initial mesh by refining globally several times. Prepare boundaries for Savage and Burford Model
+
+The initial mesh will consist of regular rectangular elements. This mesh will be refined in successive steps using \hyperlink{classvsf_1_1ApShear_ae0c1413d01e98526e4a61a7324bf2ae0}{refine\-\_\-grid()}. First a mesh is created with elements of the highest possible quality (as close to square as possible). Then this mesh is refined globally a given number of times.
+
+\begin{DoxyNote}{Note}
+If the fault is very small it can be ignored (if it's size is smaller than the element size). If this happens, include more global refinement steps. 
+\end{DoxyNote}
+Once the mesh has been created and refined, we assign an indicator to each part of the boundary, depending on what kind of boundary it is. There are four possible boundary conditions\-:
+
+
+\begin{DoxyItemize}
+\item 0) The locked part above the fault, with imposed zero displacement (homogeneous Dirichlet boundary conditions).
+\item 1) Regions of imposed displacement (non-\/homogeneous Dirichlet boundary conditions).
+\item 2) Free boundaries, with zero imposed stress (homogeneous Neumann boundary conditions).
+\item 3) Imposed stress (non-\/homogeneous boundary conditions.
+
+For Savage and Burford model \cite{savage_burford_73}, the locked part (0) will be on the left boundary, from the top to a certain depth $d$. From that depth until the bottom of the model we impose a displacement $UD$ (1). The bottom boundary will have the same imposed displacement (1). Finally, the top and left boundaries will be free (2).
+\end{DoxyItemize}\hypertarget{classvsf_1_1ApShear_ab12b87e8d50262d7735c5ba0aab1549f}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!make\-\_\-grid\-\_\-turcotte@{make\-\_\-grid\-\_\-turcotte}}
+\index{make\-\_\-grid\-\_\-turcotte@{make\-\_\-grid\-\_\-turcotte}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{make\-\_\-grid\-\_\-turcotte}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::make\-\_\-grid\-\_\-turcotte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ab12b87e8d50262d7735c5ba0aab1549f}
+Create initial mesh by refining globally several times. Prepare boundaries for Turcotte and Spence Model
+
+The initial mesh will consist of regular rectangular elements. This mesh will be refined in successive steps using \hyperlink{classvsf_1_1ApShear_ae0c1413d01e98526e4a61a7324bf2ae0}{refine\-\_\-grid()}. First a mesh is created with elements of the highest possible quality (as close to square as possible). Then this mesh is refined globally a given number of times.
+
+\begin{DoxyNote}{Note}
+If the fault is very small it may be ignored (if it's size is smaller than the element size). If this happens, include more global refinement steps. 
+\end{DoxyNote}
+Once the mesh has been created and refined, we assign an indicator to each part of the boundary, depending on what kind of boundary it is. There are four possible boundary conditions\-:
+
+
+\begin{DoxyItemize}
+\item 0) The locked part above the fault, with imposed zero displacement (homogeneous Dirichlet boundary conditions).
+\item 1) Regions of imposed displacement (non-\/homogeneous Dirichlet boundary conditions).
+\item 2) Free boundaries, with zero imposed stress (homogeneous Neumann boundary conditions).
+\item 3) Imposed stress (non-\/homogeneous boundary conditions.
+
+For Turcotte and Spence's model \cite{turcotte_spence_74}, the locked part (0) will be on the left boundary, from the top to a certain depth $d$. From that depth until the bottom of the model the boundary will be free (2). The top and bottom boundaries will also be free (2). Finally, the leftmost boundary will have an imposed stress $S$ (3).
+\end{DoxyItemize}\hypertarget{classvsf_1_1ApShear_af10b1bbda00ef235b3bff742831890bf}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!output\-\_\-results@{output\-\_\-results}}
+\index{output\-\_\-results@{output\-\_\-results}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{output\-\_\-results}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::output\-\_\-results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_af10b1bbda00ef235b3bff742831890bf}
+The results will be output in this step. Three different outputs are generated.
+\begin{DoxyItemize}
+\item The final mesh in eps format.
+\item The final displacement in the 2\-D domain in vtk format
+\item Information regarding the conparison between the numerical and the analytical solutions. 
+\end{DoxyItemize}\hypertarget{classvsf_1_1ApShear_ad0d3a17afc6092f53560a50fd21c82f3}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!qpoints\-\_\-to\-\_\-\-D\-G@{qpoints\-\_\-to\-\_\-\-D\-G}}
+\index{qpoints\-\_\-to\-\_\-\-D\-G@{qpoints\-\_\-to\-\_\-\-D\-G}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{qpoints\-\_\-to\-\_\-\-D\-G}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::qpoints\-\_\-to\-\_\-\-D\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ad0d3a17afc6092f53560a50fd21c82f3}
+The information stored in the quadrature points is moved to a Discontinuous Galerkin space
+
+As part of the refinement process, we need to store the old viscous strain in a F\-E field defined everywhere. Once that has been done, we will be able to transfer the old viscous strain (or any data stored in the quadrature point using \hyperlink{structvsf_1_1PointHistory}{Point\-History}) from the old mesh to the refined mesh. For more details see \href{https://www.dealii.org/8.2.0/doxygen/deal.II/step_18.html#Refinementduringtimesteps}{\tt Step-\/18} \hypertarget{classvsf_1_1ApShear_ae0c1413d01e98526e4a61a7324bf2ae0}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!refine\-\_\-grid@{refine\-\_\-grid}}
+\index{refine\-\_\-grid@{refine\-\_\-grid}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{refine\-\_\-grid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::refine\-\_\-grid (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{min\-\_\-grid\-\_\-level, }
+\item[{const unsigned int}]{max\-\_\-grid\-\_\-level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ae0c1413d01e98526e4a61a7324bf2ae0}
+Refines the mesh adaptively. The first step is to identify which cells need to be refined, for which we use we use a Kelly Error Estimator. We will refine 60\% of the cells that have the highest error and coarsen the rest).
+
+We do not want to make any cell too small, because that would mean (according to the Courant–\-Friedrichs–\-Lewy condition) that we have to make the time steps very small. Therefore, we will un-\/flag those cells that have already been refined a certain number of times so they are not refined any further. A similar thing happens with cells that are too big, therefore, we will also remove the flag of the cells that have reached a certain maximum size so they are not coarsened any more.
+
+Here we also need to transfer the \hyperlink{classvsf_1_1ApShear_ae4ee8cb26cbb92aa25fa91d2eb2198db}{solution} and the \hyperlink{classvsf_1_1ApShear_ab47e19f00b1a5475699673c44d48ab8d}{history\-\_\-field} (where the old viscous strain is stored) to the new mesh. First we have to prepare the vectors that will be transferred to the new grid (the old grid will disappear once we have done the refinement so we have to transfer the data at the same time as the refinement).
+
+Once everything is ready we can actually refine and coarsen the mesh.
+
+Once the new mesh is ready, we need to resent the system and the data at the quadrature points.
+
+Finally, we can interpolate the \hyperlink{classvsf_1_1ApShear_ae4ee8cb26cbb92aa25fa91d2eb2198db}{solution} and the \hyperlink{classvsf_1_1ApShear_ab47e19f00b1a5475699673c44d48ab8d}{history\-\_\-field} in the new mesh.\hypertarget{classvsf_1_1ApShear_a8c366c00d028013a6949ee94786038ac}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!run@{run}}
+\index{run@{run}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classvsf_1_1ApShear_a8c366c00d028013a6949ee94786038ac}
+The problem is solved in several steps\-:
+\begin{DoxyItemize}
+\item Initial time step (\hyperlink{classvsf_1_1ApShear_a49ba2c773ca4f6a1946dee0d08e76901}{do\-\_\-first\-\_\-time\-\_\-step()})\-:
+\begin{DoxyEnumerate}
+\item Create an initial uniform grid and set boundary conditions (\hyperlink{classvsf_1_1ApShear_ab12b87e8d50262d7735c5ba0aab1549f}{make\-\_\-grid\-\_\-turcotte()} and \hyperlink{classvsf_1_1ApShear_a265e55ba004056c96ab59aa633d5510f}{make\-\_\-grid\-\_\-savage()}).
+\item Initialize the history values stored at quadrature points with zeros (\hyperlink{classvsf_1_1ApShear_a7e74ebe08f8b6586a71c606a64ab4db4}{setup\-\_\-quadrature\-\_\-point\-\_\-history()}).
+\item Setup Do\-Fs and constraints (\hyperlink{classvsf_1_1ApShear_aa64a11292b5664242bb982a1a400fae0}{setup\-\_\-system()}).
+\item Assemble the stiffness matrix and R\-H\-S (\hyperlink{classvsf_1_1ApShear_a53c9284a86fc90a817ddad24eaf18569}{assemble\-\_\-system()}).
+\item Solve (\hyperlink{classvsf_1_1ApShear_a7e90fa26f6c78252f8e4592d5fc7adcf}{solve()}).
+\item Refine the mesh adaptively (\hyperlink{classvsf_1_1ApShear_ae0c1413d01e98526e4a61a7324bf2ae0}{refine\-\_\-grid()}) and repeat 2-\/5.
+\end{DoxyEnumerate}
+\item Successive time steps (\hyperlink{classvsf_1_1ApShear_a230bde382d9f71b56181ae943634611e}{do\-\_\-time\-\_\-step()})\-:
+\begin{DoxyEnumerate}
+\item Calculate the time step and compute the total displacement (get\-\_\-time\-\_\-step\-\_\-andisplacement()).
+\item Update the values stored in the quadrature points using the new solution (\hyperlink{classvsf_1_1ApShear_a6b2acd54f930d5deac94064923e1aa7b}{update\-\_\-quadrature\-\_\-point\-\_\-history()}).
+\item Assemble the stiffness matrix and R\-H\-S (\hyperlink{classvsf_1_1ApShear_aa64a11292b5664242bb982a1a400fae0}{setup\-\_\-system()}).
+\item Solve (\hyperlink{classvsf_1_1ApShear_a7e90fa26f6c78252f8e4592d5fc7adcf}{solve()}).
+\item Every several time steps refine the grid.
+\begin{DoxyItemize}
+\item a) Transfer the quadrature point history to a Discontinuous Galerkin field (\hyperlink{classvsf_1_1ApShear_ad0d3a17afc6092f53560a50fd21c82f3}{qpoints\-\_\-to\-\_\-\-D\-G()}).
+\item b) Refine the mesh and interpolate the old solution and viscous strain in the new mesh (\hyperlink{classvsf_1_1ApShear_ae0c1413d01e98526e4a61a7324bf2ae0}{refine\-\_\-grid()}).
+\item c) Transfer the data stored in the D\-G field to the new quadrature points (\hyperlink{classvsf_1_1ApShear_accf1d57fc6f81758bf06a93ef70f74c4}{D\-G\-\_\-to\-\_\-qpoints()}). 
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+\end{DoxyItemize}\hypertarget{classvsf_1_1ApShear_a7e74ebe08f8b6586a71c606a64ab4db4}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!setup\-\_\-quadrature\-\_\-point\-\_\-history@{setup\-\_\-quadrature\-\_\-point\-\_\-history}}
+\index{setup\-\_\-quadrature\-\_\-point\-\_\-history@{setup\-\_\-quadrature\-\_\-point\-\_\-history}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{setup\-\_\-quadrature\-\_\-point\-\_\-history}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::setup\-\_\-quadrature\-\_\-point\-\_\-history (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a7e74ebe08f8b6586a71c606a64ab4db4}
+Initialize the data stored at quadrature points. \hypertarget{classvsf_1_1ApShear_aa64a11292b5664242bb982a1a400fae0}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!setup\-\_\-system@{setup\-\_\-system}}
+\index{setup\-\_\-system@{setup\-\_\-system}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{setup\-\_\-system}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::setup\-\_\-system (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_aa64a11292b5664242bb982a1a400fae0}
+Setup Do\-Fs, renumbering and constraints.
+
+Here we set up Do\-Fs, renumber them for efficiency and set required constraints. Renumber Do\-Fs to increase efficiency of the solver. In this case, it is not really necessary for the solver and preconditioners that are being used
+
+Set constraints for hanging nodes (due to adaptive refinement) and for homogeneous and non-\/homogeneous B\-C (indicators 0 and 1 respectively).\hypertarget{classvsf_1_1ApShear_a7e90fa26f6c78252f8e4592d5fc7adcf}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!solve@{solve}}
+\index{solve@{solve}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a7e90fa26f6c78252f8e4592d5fc7adcf}
+The solver an refinement steps are defined here.
+
+The strategy to invert the stiffness matrix and solve the system is set here. Because the problem is simple, we just use a Conjugate Gradient solver with the identity as a preconditioner. \hypertarget{classvsf_1_1ApShear_a6b2acd54f930d5deac94064923e1aa7b}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!update\-\_\-quadrature\-\_\-point\-\_\-history@{update\-\_\-quadrature\-\_\-point\-\_\-history}}
+\index{update\-\_\-quadrature\-\_\-point\-\_\-history@{update\-\_\-quadrature\-\_\-point\-\_\-history}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{update\-\_\-quadrature\-\_\-point\-\_\-history}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::update\-\_\-quadrature\-\_\-point\-\_\-history (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a6b2acd54f930d5deac94064923e1aa7b}
+Update the data stored at quadrature points and sore it in a D\-G space. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classvsf_1_1ApShear_afcd25b4c0be9a4c7e69165e6eb151240}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!constraints@{constraints}}
+\index{constraints@{constraints}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{constraints}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Constraint\-Matrix {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::constraints\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_afcd25b4c0be9a4c7e69165e6eb151240}
+\hypertarget{classvsf_1_1ApShear_ae4927f95e4a98c107d743a078a9b1bc8}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!degree@{degree}}
+\index{degree@{degree}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{degree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const unsigned int {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::degree\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ae4927f95e4a98c107d743a078a9b1bc8}
+\hypertarget{classvsf_1_1ApShear_a55da0ced5f7ee7c16a518073f4524ffb}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!dof\-\_\-handler@{dof\-\_\-handler}}
+\index{dof\-\_\-handler@{dof\-\_\-handler}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{dof\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Do\-F\-Handler$<$dim$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::dof\-\_\-handler\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a55da0ced5f7ee7c16a518073f4524ffb}
+\hypertarget{classvsf_1_1ApShear_a980e61d73be5cae2b8e8498b9ffc087a}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!error@{error}}
+\index{error@{error}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::error\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a980e61d73be5cae2b8e8498b9ffc087a}
+\hypertarget{classvsf_1_1ApShear_a228388a897a688b79d0800f3bb18697f}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!fe@{fe}}
+\index{fe@{fe}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{fe}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Smart\-Pointer$<$const Finite\-Element$<$dim$>$ $>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::fe\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a228388a897a688b79d0800f3bb18697f}
+\hypertarget{classvsf_1_1ApShear_acdcfb9ec77c56722ce42173f7599c336}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!history\-\_\-dof\-\_\-handler@{history\-\_\-dof\-\_\-handler}}
+\index{history\-\_\-dof\-\_\-handler@{history\-\_\-dof\-\_\-handler}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{history\-\_\-dof\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Do\-F\-Handler$<$dim$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::history\-\_\-dof\-\_\-handler\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_acdcfb9ec77c56722ce42173f7599c336}
+\hypertarget{classvsf_1_1ApShear_a3c2f9d0e479ed2ebcb3660a3b7b72aee}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!history\-\_\-fe@{history\-\_\-fe}}
+\index{history\-\_\-fe@{history\-\_\-fe}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{history\-\_\-fe}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Smart\-Pointer$<$const Finite\-Element$<$dim$>$ $>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::history\-\_\-fe\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a3c2f9d0e479ed2ebcb3660a3b7b72aee}
+\hypertarget{classvsf_1_1ApShear_ab47e19f00b1a5475699673c44d48ab8d}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!history\-\_\-field@{history\-\_\-field}}
+\index{history\-\_\-field@{history\-\_\-field}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{history\-\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\-::vector$<$Vector$<$double$>$ $>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::history\-\_\-field\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ab47e19f00b1a5475699673c44d48ab8d}
+\hypertarget{classvsf_1_1ApShear_a3a6fb4045df9297aea20326cb0df5748}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!model@{model}}
+\index{model@{model}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const {\bf Model} {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::model\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a3a6fb4045df9297aea20326cb0df5748}
+\hypertarget{classvsf_1_1ApShear_ab02322073eb961685e8daef27729bf8d}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!n\-\_\-initial\-\_\-global\-\_\-refinement@{n\-\_\-initial\-\_\-global\-\_\-refinement}}
+\index{n\-\_\-initial\-\_\-global\-\_\-refinement@{n\-\_\-initial\-\_\-global\-\_\-refinement}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{n\-\_\-initial\-\_\-global\-\_\-refinement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const unsigned int {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::n\-\_\-initial\-\_\-global\-\_\-refinement\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ab02322073eb961685e8daef27729bf8d}
+\hypertarget{classvsf_1_1ApShear_a5c702ecbc19d28d835e666c8ee87c4eb}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!n\-\_\-pre\-\_\-refinment@{n\-\_\-pre\-\_\-refinment}}
+\index{n\-\_\-pre\-\_\-refinment@{n\-\_\-pre\-\_\-refinment}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{n\-\_\-pre\-\_\-refinment}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const unsigned int {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::n\-\_\-pre\-\_\-refinment\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a5c702ecbc19d28d835e666c8ee87c4eb}
+\hypertarget{classvsf_1_1ApShear_a2926794d4cbeed7550443a4999868110}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!quadrature\-\_\-formula@{quadrature\-\_\-formula}}
+\index{quadrature\-\_\-formula@{quadrature\-\_\-formula}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{quadrature\-\_\-formula}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const Q\-Gauss$<$dim$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::quadrature\-\_\-formula\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a2926794d4cbeed7550443a4999868110}
+\hypertarget{classvsf_1_1ApShear_aeb702a26aef2b0a7d0d27d46909b81b9}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!quadrature\-\_\-point\-\_\-history@{quadrature\-\_\-point\-\_\-history}}
+\index{quadrature\-\_\-point\-\_\-history@{quadrature\-\_\-point\-\_\-history}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{quadrature\-\_\-point\-\_\-history}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\-::vector$<${\bf Point\-History}$<$dim$>$ $>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::quadrature\-\_\-point\-\_\-history\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_aeb702a26aef2b0a7d0d27d46909b81b9}
+\hypertarget{classvsf_1_1ApShear_a523d3e34e242a9dbcf1d727dc17874b6}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!refinement\-\_\-mode@{refinement\-\_\-mode}}
+\index{refinement\-\_\-mode@{refinement\-\_\-mode}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{refinement\-\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ const {\bf Refinement\-Mode} {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::refinement\-\_\-mode\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a523d3e34e242a9dbcf1d727dc17874b6}
+\hypertarget{classvsf_1_1ApShear_ae4ee8cb26cbb92aa25fa91d2eb2198db}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!solution@{solution}}
+\index{solution@{solution}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{solution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Vector$<$double$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::solution\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ae4ee8cb26cbb92aa25fa91d2eb2198db}
+\hypertarget{classvsf_1_1ApShear_a065cb85ed84df073fd1b726667eebcc3}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!sparsity\-\_\-pattern@{sparsity\-\_\-pattern}}
+\index{sparsity\-\_\-pattern@{sparsity\-\_\-pattern}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{sparsity\-\_\-pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Sparsity\-Pattern {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::sparsity\-\_\-pattern\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a065cb85ed84df073fd1b726667eebcc3}
+\hypertarget{classvsf_1_1ApShear_aa8a20bee076f8edea5090fe587af2630}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!step@{step}}
+\index{step@{step}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ unsigned int {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::step\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_aa8a20bee076f8edea5090fe587af2630}
+\hypertarget{classvsf_1_1ApShear_a96a76f66c7155491bfe3d3c50d576fe9}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!surface\-\_\-analytical\-\_\-solution@{surface\-\_\-analytical\-\_\-solution}}
+\index{surface\-\_\-analytical\-\_\-solution@{surface\-\_\-analytical\-\_\-solution}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{surface\-\_\-analytical\-\_\-solution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\-::vector$<$double$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::surface\-\_\-analytical\-\_\-solution\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a96a76f66c7155491bfe3d3c50d576fe9}
+\hypertarget{classvsf_1_1ApShear_adbc4b0f8e2a3282b27241a2088f9717d}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!surface\-\_\-numerical\-\_\-solution@{surface\-\_\-numerical\-\_\-solution}}
+\index{surface\-\_\-numerical\-\_\-solution@{surface\-\_\-numerical\-\_\-solution}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{surface\-\_\-numerical\-\_\-solution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\-::vector$<$double$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::surface\-\_\-numerical\-\_\-solution\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_adbc4b0f8e2a3282b27241a2088f9717d}
+\hypertarget{classvsf_1_1ApShear_a9aec407d8269d51336f50f3a9d94b53b}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!surface\-\_\-q\-\_\-points@{surface\-\_\-q\-\_\-points}}
+\index{surface\-\_\-q\-\_\-points@{surface\-\_\-q\-\_\-points}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{surface\-\_\-q\-\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\-::vector$<$double$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::surface\-\_\-q\-\_\-points\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a9aec407d8269d51336f50f3a9d94b53b}
+\hypertarget{classvsf_1_1ApShear_a8735861f0a5530262407cd52b7a1b386}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!system\-\_\-matrix@{system\-\_\-matrix}}
+\index{system\-\_\-matrix@{system\-\_\-matrix}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{system\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Sparse\-Matrix$<$double$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::system\-\_\-matrix\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a8735861f0a5530262407cd52b7a1b386}
+\hypertarget{classvsf_1_1ApShear_ab1046cf38cb6535dd0ab78793bccf6a1}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!system\-\_\-rhs@{system\-\_\-rhs}}
+\index{system\-\_\-rhs@{system\-\_\-rhs}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{system\-\_\-rhs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Vector$<$double$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::system\-\_\-rhs\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ab1046cf38cb6535dd0ab78793bccf6a1}
+\hypertarget{classvsf_1_1ApShear_ab11c93d8c80fc10976c8fb91a733cf92}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!time\-\_\-step@{time\-\_\-step}}
+\index{time\-\_\-step@{time\-\_\-step}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{time\-\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::time\-\_\-step\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ab11c93d8c80fc10976c8fb91a733cf92}
+\hypertarget{classvsf_1_1ApShear_ab4bd5313e37b8819910d35aaae0a2373}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!total\-\_\-time@{total\-\_\-time}}
+\index{total\-\_\-time@{total\-\_\-time}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{total\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::total\-\_\-time\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_ab4bd5313e37b8819910d35aaae0a2373}
+\hypertarget{classvsf_1_1ApShear_a53d0e9d3fdabcac44cc7c6408ace451b}{\index{vsf\-::\-Ap\-Shear@{vsf\-::\-Ap\-Shear}!triangulation@{triangulation}}
+\index{triangulation@{triangulation}!vsf::ApShear@{vsf\-::\-Ap\-Shear}}
+\subsubsection[{triangulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Triangulation$<$dim$>$ {\bf vsf\-::\-Ap\-Shear}$<$ dim $>$\-::triangulation\hspace{0.3cm}{\ttfamily [private]}}}\label{classvsf_1_1ApShear_a53d0e9d3fdabcac44cc7c6408ace451b}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{VE__fault__elastic_8cc}{V\-E\-\_\-fault\-\_\-elastic.\-cc}\end{DoxyCompactItemize}

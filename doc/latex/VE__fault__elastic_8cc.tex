@@ -1,0 +1,50 @@
+\hypertarget{VE__fault__elastic_8cc}{\section{V\-E\-\_\-fault\-\_\-elastic.\-cc File Reference}
+\label{VE__fault__elastic_8cc}\index{V\-E\-\_\-fault\-\_\-elastic.\-cc@{V\-E\-\_\-fault\-\_\-elastic.\-cc}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvsf_1_1PointHistory}{vsf\-::\-Point\-History$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1FunctionBase}{vsf\-::\-Function\-Base$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1Solution__Turcotte}{vsf\-::\-Solution\-\_\-\-Turcotte$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1Solution__Savage}{vsf\-::\-Solution\-\_\-\-Savage$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1Shear__Modulus}{vsf\-::\-Shear\-\_\-\-Modulus$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1Viscosity}{vsf\-::\-Viscosity$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1BodyForce}{vsf\-::\-Body\-Force$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1Dirichlet__BC}{vsf\-::\-Dirichlet\-\_\-\-B\-C$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1Neumann__BC}{vsf\-::\-Neumann\-\_\-\-B\-C$<$ dim $>$}
+\item 
+class \hyperlink{classvsf_1_1ApShear}{vsf\-::\-Ap\-Shear$<$ dim $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacevsf}{vsf}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{VE__fault__elastic_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{VE__fault__elastic_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{V\-E\-\_\-fault\-\_\-elastic.\-cc@{V\-E\-\_\-fault\-\_\-elastic.\-cc}!main@{main}}
+\index{main@{main}!VE_fault_elastic.cc@{V\-E\-\_\-fault\-\_\-elastic.\-cc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{VE__fault__elastic_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\begin{DoxyNote}{Note}
+The equations are only valid for 2\-D geometries (anti-\/plane shear approximation). If the user tries to create a 3\-D geometry, an exception is thrown and the program stops.
+\end{DoxyNote}
+When an Ap\-Shear is created the user must specify the kind of elements and refinement (adaptive\-\_\-refinement or global\-\_\-refinement) and Model (turcotte or savage) are going oto be used.
